@@ -1,21 +1,21 @@
 // main body content
-
 .container {
+    padding-top: 30px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-flow: column wrap;
+    border: 1px solid red;
 
     .top-page {
         width: 100%;
         display:flex;
         flex-flow: row wrap;
-        background: lightgoldenrodyellow;
+        .background-coloring();
         justify-content: space-evenly;
-        border-bottom: 1px dotted black;
-        img {
-            .img_style();
-        }
+        .border-style();
+        padding-top: 20px;
+        padding-bottom: 20px;
         
         #slogan {
             width: 60%;
@@ -28,11 +28,9 @@
         h1 {
             font-weight: bold;
             font-size: 35px;
-            // width: 70%;
+        
         }
-        // p{
-        //     // width: 60%;
-        // }
+        
     }
     #intro_quote {
         padding: 30px 10px;
@@ -41,6 +39,8 @@
         display: flex;
         margin: 0 auto;
         align-items: center;
+        .background-coloring();
+
         h2 {
             width: 100%;
             padding: 20px 10px;
@@ -50,10 +50,13 @@
     }
     .mid-page {
         .recipe{
+            .background-coloring;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-evenly;
-            img{
+            padding: 20px 0;
+            .border-style();
+            .block-pic{
                 .img_style();
             }
             .description{
@@ -64,6 +67,10 @@
                 text-align: center;
                 justify-content: space-evenly;
                 border: 1px solid red;
+                line-height: normal;
+                li{
+                    list-style: initial;
+                }
 
             }
         }

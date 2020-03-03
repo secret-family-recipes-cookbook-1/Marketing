@@ -184,11 +184,15 @@ p {
   font-weight: bold;
   color: linear-gradient(blue, 20%, white);
 }
+body {
+  background: navy;
+}
 .container {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
+  border: 1px solid red;
 }
 .container .top-page {
   width: 100%;
@@ -197,11 +201,6 @@ p {
   background: lightgoldenrodyellow;
   justify-content: space-evenly;
   border-bottom: 1px dotted black;
-}
-.container .top-page img {
-  width: 25%;
-  padding: 20px 10px;
-  border-radius: 10%;
 }
 .container .top-page #slogan {
   width: 60%;
@@ -228,4 +227,23 @@ p {
   padding: 20px 10px;
   margin: 0 auto;
   text-align: center;
+}
+.container .mid-page .recipe {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.container .mid-page .recipe img {
+  width: 25%;
+  padding: 20px 10px;
+  border-radius: 10%;
+}
+.container .mid-page .recipe .description {
+  display: flex;
+  width: 60%;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  border: 1px solid red;
 }
