@@ -160,7 +160,7 @@ p {
 }
 body {
   background: linear-gradient(#3f990b, 30%, white);
-  height: 250vh;
+  height: 100%;
 }
 .navigation {
   top: 0;
@@ -194,7 +194,10 @@ body {
   font-weight: bold;
   color: white;
 }
-.footer {
+.navigation a:hover {
+  color: green;
+}
+footer {
   width: 100%;
   height: 60px;
   display: flex;
@@ -204,9 +207,9 @@ body {
   padding-right: 20px;
   background: #23293B;
   color: white;
-  border-bottom: 1px dotted white;
+  padding-bottom: 0;
 }
-.footer .nav {
+footer .nav {
   padding-top: 25px;
   padding-bottom: 25px;
   background: #F4F4F4;
@@ -215,7 +218,7 @@ body {
   background: #23293B;
   color: white;
 }
-.footer a {
+footer a {
   text-decoration: none;
   padding-right: 5px;
   padding-left: 5px;
@@ -225,13 +228,14 @@ body {
   font-weight: bold;
   color: white;
 }
+footer a:hover {
+  color: green;
+}
 .container {
-  padding-top: 30px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
-  border: 1px solid red;
 }
 .container .top-page {
   width: 100%;
@@ -244,20 +248,24 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.container .top-page img {
+  border-radius: 8%;
+}
 .container .top-page #slogan {
   width: 60%;
   display: flex;
   flex-flow: column wrap;
-  padding: 30px 10px;
+  padding: 30px 10px 50px 10px;
   justify-content: space-evenly;
   align-items: center;
 }
 .container .top-page h1 {
   font-weight: bold;
   font-size: 35px;
+  padding-bottom: 20px;
 }
 .container #intro_quote {
-  padding: 30px 10px;
+  padding: 60px 10px;
   height: 40px;
   width: 100%;
   display: flex;
@@ -282,10 +290,24 @@ body {
   border-bottom: 1px dotted white;
 }
 .container .mid-page .recipe .block-pic {
-  width: 25%;
-  height: 40%;
+  width: 200px;
+  height: 200px;
   padding: 20px 10px;
-  border-radius: 10%;
+  border-radius: 20%;
+}
+.container .mid-page .recipe .meal-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 8%;
+  align-items: center;
+}
+.container .mid-page .recipe .meal-card h3 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  align-items: center;
+  padding: 10px 10px;
 }
 .container .mid-page .recipe .description {
   display: flex;
@@ -294,8 +316,8 @@ body {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  border: 1px solid red;
-  line-height: normal;
+  line-height: 2em;
+  border-radius: 8%;
 }
 .container .mid-page .recipe .description li {
   list-style: initial;
