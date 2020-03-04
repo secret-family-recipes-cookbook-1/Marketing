@@ -1,4 +1,6 @@
 body {
-  background: linear-gradient(#3f990b, 30%, white);
+  background-color: #b8ad69;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   height: 100%;
 }
